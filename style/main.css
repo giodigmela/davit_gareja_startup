@@ -1,0 +1,237 @@
+@font-face{
+    font-family:"qartuli";
+    src: url("font/adamiani_(eri).ttf");
+}
+
+
+body{
+    background-color: black;
+}
+
+
+#startup_load{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -6.25px;
+    margin-left: -25px;
+    width: 50px;
+    height: 12.5px;
+    animation-name: opacity_down;
+    animation-duration: 0.5s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+#dot_1{
+    position: absolute;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    outline: 1px solid white;
+    border-radius: 50%;
+    animation-duration: 2.2s;
+    animation-name: bg_white;
+    animation-fill-mode: forwards;
+}
+
+#dot_2{
+    position: absolute;
+    right: 18.75px;
+    width: 10px;
+    height: 10px;
+    outline: 1px solid white;
+    border-radius: 50%;
+    animation-delay: 0.25s;
+    animation-duration: 2.2s;
+    animation-name: bg_white;
+    animation-fill-mode: forwards;
+}
+
+#dot_3{
+    position: absolute;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    outline: 1px solid white;
+    border-radius: 50%;
+    animation-delay: 0.5s;
+    animation-duration: 2.2s;
+    animation-name: bg_white;
+    animation-fill-mode: forwards;
+}
+
+#startup{
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#startup_title{
+    position: absolute;
+    opacity: 0;
+    color: white;
+    font-size: 50px;
+    transform: translateX(-50%);
+    font-family:"qartuli";
+    top: 50%;
+    left: 50%;
+    animation-name: opacity;
+    animation-delay: 2.4s;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+#fade_blank{
+    position: absolute;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    animation-delay: 2.15s;
+    animation-duration: 0.5s;
+    animation-name: opacity_down;
+    animation-fill-mode: forwards;
+}
+
+#startup_title_glow{
+    position: absolute;
+    opacity: 0;
+    width: 250px;
+    height: 1px;
+    top: 50%;
+    left: 50%;
+    margin-left: -125px;
+    margin-top: -60px;
+    box-shadow: 0px 80px 50px 50px black;
+    animation-name: opacity;
+    animation-delay: 2.4s;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+#title_outer{
+    position: absolute;
+    width: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#startup_img_5{
+    position: absolute;
+    right: -140px;
+    top: -140px;
+    width: 400px;
+    animation-name: right;
+    animation-delay: 2s;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    image-rendering: pixelated;
+}
+
+#startup_img_2{
+    position: absolute;
+    right: 0px;
+    top: -250px;
+    width: 600px;
+    animation-name: scale;
+    animation-delay: 2s;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    image-rendering: pixelated;
+}
+
+#startup_img_4{
+    position: absolute;
+    left: -90px;
+    top: -130px;
+    width: 400px;
+    animation-name: left;
+    animation-delay: 2s;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    image-rendering: pixelated;
+}
+
+#startup_img_3{
+    position: absolute;
+    left: 150px;
+    top: -60px;
+    width: 350px;
+    animation-name: down;
+    animation-delay: 2s;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    image-rendering: pixelated;
+}
+
+#startup_img_6{
+    position: absolute;
+    left: 120px;
+    top: -190px;
+    width: 350px;
+    animation-name: up;
+    animation-delay: 2s;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    image-rendering: pixelated;
+}
+
+#startup_img_1{
+    position: absolute;
+    left: 60px;
+    top: -200px;
+    width: 350px;
+    transform: rotate(3deg);
+    animation-name: up;
+    animation-delay: 2s;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    image-rendering: pixelated;
+}
+
+
+@keyframes down{
+    0%{transform: translateY(0px);}
+    100%{transform: translateY(2px);}
+}
+
+@keyframes right{
+    0%{transform: translateX(0px);}
+    100%{opacity: 1; transform: translateX(2px);}
+}
+
+@keyframes left{
+    0%{transform: translateX(0px);}
+    100%{opacity: 1; transform: translateX(-2px);}
+}
+
+@keyframes up{
+    0%{transform: translateY(0px);}
+    100%{opacity: 1; transform: translateY(-2px);}
+}
+
+@keyframes bg_white{
+    0%{}
+    25%{background-color: white;}
+    50%{background-color: transparent;}
+    75%{background-color: white;}
+    100%{}
+}
+
+@keyframes scale{
+    0%{transform: scale(1);}
+    100%{transform: scale(1.01);}
+}
+
+@keyframes opacity{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@keyframes opacity_down{
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+}
